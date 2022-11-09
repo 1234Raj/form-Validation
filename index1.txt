@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <!-- <h1>Validation Form</h1> -->
+    <div class="container">
+        <div class="title">User-details</div>
+        <div class="content">
+    <form action="#" onsubmit ="return Validationform()">
+        <div class="user-details">
+          <div class="input-box">
+            <label for=""class="details">Full Name</label> 
+            <input type="text" name="user" id="user" placeholder="E.g. - Rajesh Nagar"    >
+            <span id="fullname" ></span>
+        </div>
+          <div class="input-box">
+            <label for=""class="details">Age</label> 
+            <input type="text" name="age" id="age" placeholder="E.g. - Rajesh Nagar"    >
+            <span id="Age1" ></span>
+        </div>
+          <!-- <div class="input-box">
+            <label for=""class="details">Full Name</label> 
+            <input type="text" name="user" id="user" placeholder="E.g. - Rajesh Nagar"    >
+            <span id="emails" ></span>
+        </div>
+          <div class="input-box">
+            <label for=""class="details">Full Name</label> 
+            <input type="text" name="user" id="user" placeholder="E.g. - Rajesh Nagar"    >
+            <span id="Phones" ></span>
+        </div>
+          <div class="input-box">
+            <span class="details">Job Role</span>
+            <input type="text" id="role" placeholder="E.g-student" style="text-transform: capitalize;"  >
+            <span id="Roles" ></span>
+        </div>
+          <div class="input-box">
+            <span class="details">About</span>
+            <input type="text" id="about" placeholder="Enter About Your"  >
+            <span id="Abouts" ></span>
+        </div>
+          <div class="input-box">
+            <label for="" class="details"> Identity type</label>
+             
+            <select  name="Identitys" id="form-con"  class="form-control">
+				<option selected="selected" value="0">--Select--</option>
+				<option value="02">Voter ID</option>
+				<option value="03">Passport</option>
+				<option value="04">Bank Passbook with photograph</option>
+				<option value="05">Ration Card with photograph</option>
+				<option value="07">Any Other Valid Govt Identity with photograph</option>
+				<option value="11">Driving License</option>
+
+			</select>
+
+          </div>
+          <div class="input-box">
+            <span class="details">Identification Number</span>
+            <input type="number" id="Identity" maxlength="10" placeholder=" Enter Your ID number"  >
+            <span id="identity" ></span>
+        </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" id="password"  minlength="8" placeholder=" E.g.-@bkjbb5454#"  >
+            <span id="Password" ></span>
+        </div>
+          <div class="input-box">
+            <span class="details"> Confirm password</span>
+            <input type="password" id="confirmpass"  minlength="" placeholder=" E.g.-@bkjbb5454#"  >
+            <span id="Password" ></span> 
+            <span id="confirmpassword" ></span>
+        </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div> -->
+         
+          <input type="submit"  name="submit" value="Submit" class="btn "    >
+          
+         
+      </form>
+    </div>
+</div>
+<div class="Popup" id="popup">
+  <span><i class="fa fa-4x fa-check-circle" aria-hidden="true"></i></span>
+  <h2>Thank You!</h2>
+  <p>Your details has beeen successfully submitted . Thanks!</p>
+  <button type="button" onclick="closePopup()">OK</button>
+</div>
+
+<!-- <script>
+let popup = document.getElementById('popup');
+function openPopup(){
+  popup.classList.add("open-popup");
+}
+ function closePopup(){
+   popup.classList.remove("open-popup");
+ }
+
+</script> -->
+<script src="/validation_form.js"></script>
+</body>
+</html>
